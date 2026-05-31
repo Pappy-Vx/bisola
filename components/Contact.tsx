@@ -33,13 +33,22 @@ export default function Contact() {
         </a>
         <div className="contact-socials reveal" data-d="2">
           <a href="#" className="btn btn-ghost">
-            LinkedIn ↗
+            LinkedIn{" "}
+            <svg className="arr" width="12" height="12" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </a>
           <a href="#" className="btn btn-ghost">
-            X / Twitter ↗
+            X / Twitter{" "}
+            <svg className="arr" width="12" height="12" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </a>
           <a href="mailto:hello@bisola.work" className="btn btn-primary">
-            Email me ↗
+            Email me{" "}
+            <svg className="arr" width="12" height="12" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </a>
         </div>
         <div

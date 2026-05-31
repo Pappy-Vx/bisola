@@ -28,10 +28,12 @@ export default function Results() {
 
           {/* ── Row 1 ────────────────────────────────── */}
           <div className="stat big reveal">
-            <div className="ghost-arrow">↗</div>
+            <svg className="ghost-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 19L19 5M19 5H7M19 5V17" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             <div className="num">
               <span className="pre">0→</span>
-              <CountUp target={6000} suffix="+" />
+              <CountUp target={7500} suffix="+" />
             </div>
             <div className="cap">
               Monthly organic sessions built from scratch for ZendWallet in 8

@@ -241,7 +241,10 @@ export default function Hero() {
             </p>
             <div className="hero-cta-row">
               <a href="#work" className="btn btn-primary btn-lg">
-                View my work <span className="arr">↗</span>
+                View my work{" "}
+                <svg className="arr" width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                  <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </a>
               <a href="#contact" className="btn btn-ghost btn-lg">
                 Hire me
