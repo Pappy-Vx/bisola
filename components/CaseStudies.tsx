@@ -16,7 +16,7 @@ const CASES: CaseData[] = [
   {
     id: 0,
     title: "Payrit",
-    tags: ["Producer", "Script Writer"],
+    tags: ["Product Marketer", "Growth Strategist"],
     visitUrl: "#",
     overview:
       "Payrit is a payments product fighting for activation in a crowded fintech market. I owned the growth-marketing motion end to end, repositioning the onboarding narrative, rebuilding the activation funnel, and tying every lifecycle message back to a transaction outcome.",
