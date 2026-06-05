@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CountUp from "@/components/CountUp";
 
 export default function Results() {
@@ -85,6 +86,16 @@ export default function Results() {
             </div>
           </div>
 
+        </div>
+
+        <div className="results-proof reveal" data-d="2">
+          <Link href="/proof" className="results-proof-link">
+            See the raw screenshots behind these numbers
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </Link>
+          <span className="results-proof-count">17 screenshots · live dashboards</span>
         </div>
       </div>
     </section>
