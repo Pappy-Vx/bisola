@@ -1,35 +1,19 @@
 const testimonials = [
   {
     quote:
-      "Bisola finds the growth everyone else walks past. She rebuilt our activation funnel and the numbers moved within a quarter, without a single new ad pound spent.",
-    initials: "FN",
-    name: "First Last",
-    role: "Founder, Payrit",
+      "We had a big vision and a blank page. Bisola built the foundation, full marketing strategy, brand positioning, and a 90-day content calendar that gave us direction from day one. Everything we built on traces back to the thinking she put in at the start.",
+    initials: "SA",
+    name: "Shadrach Abba",
+    role: "Software Developer",
     delay: undefined as string | undefined,
   },
   {
     quote:
-      "We launched with zero organic presence. Eight months later we were ranking on the terms that actually convert. That's all Bisola's system.",
-    initials: "FN",
-    name: "First Last",
-    role: "Head of Growth, ZendWallet",
+      "Bisola is a sharp analytical thinker who consistently translates complex data into clear, impactful recommendations. Her SEO work at ZendWallet directly drove our organic growth. Collaborative, adaptable, and the kind of person every cross-functional team wants in the room.",
+    initials: "IS",
+    name: "Ibrahim Suleiman",
+    role: "Lead Mobile Engineer, ZendWallet",
     delay: "1",
-  },
-  {
-    quote:
-      "She speaks fluent SEO and fluent product. That combination is rare, most people are good at one and guess at the other.",
-    initials: "FN",
-    name: "First Last",
-    role: "Product Lead, SaaS",
-    delay: "1",
-  },
-  {
-    quote:
-      "Audit-first, ego-never. Bisola showed us exactly where our funnel was leaking and shipped the fixes herself. Genuinely a force multiplier.",
-    initials: "FN",
-    name: "First Last",
-    role: "Marketing Director",
-    delay: undefined,
   },
 ];
 
@@ -49,10 +33,6 @@ export default function Testimonials() {
               <span className="lc">i</span>als
             </h2>
           </div>
-          <p className="section-note">
-            Placeholder quotes below, swap in real notes from managers and
-            clients before launch.
-          </p>
         </div>
         <div className="tcols">
           {testimonials.map((t, i) => (
@@ -67,10 +47,6 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="placeholder-note">
-          Testimonials are placeholders, replace names, roles and quotes with
-          real ones.
         </div>
       </div>
     </section>

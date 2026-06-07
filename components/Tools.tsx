@@ -1,15 +1,22 @@
-const tools = [
-  { glyph: "Ah", name: "Ahrefs", delay: undefined as string | undefined },
-  { glyph: "Se", name: "SEMrush", delay: "1" },
-  { glyph: "GA", name: "GA4", delay: "2" },
-  { glyph: "SC", name: "Search Console", delay: "3" },
-  { glyph: "Wf", name: "Webflow", delay: "4" },
-  { glyph: "No", name: "Notion", delay: undefined },
-  { glyph: "Lo", name: "Looker", delay: "1" },
-  { glyph: "Hs", name: "HubSpot", delay: "2" },
-  { glyph: "Sf", name: "Surfer", delay: "3" },
-  { glyph: "Fg", name: "Figma", delay: "4" },
+"use client";
+
+import Image from "next/image";
+import type { StaticImageData } from "next/image";
+
+/* eslint-disable @typescript-eslint/no-require-imports */
+const tools: { img: StaticImageData; name: string; delay: string | undefined }[] = [
+  { img: require("@/components/assets/ahrefs.png"),          name: "Ahrefs",         delay: undefined },
+  { img: require("@/components/assets/semrush.png"),         name: "SEMrush",        delay: "1" },
+  { img: require("@/components/assets/ga4.png"),             name: "GA4",            delay: "2" },
+  { img: require("@/components/assets/search console.png"),  name: "Search Console", delay: "3" },
+  { img: require("@/components/assets/webflow.png"),         name: "Webflow",        delay: "4" },
+  { img: require("@/components/assets/notion.png"),          name: "Notion",         delay: undefined },
+  { img: require("@/components/assets/looker.png"),          name: "Looker",         delay: "1" },
+  { img: require("@/components/assets/hubspot.png"),         name: "HubSpot",        delay: "2" },
+  { img: require("@/components/assets/surfer.png"),          name: "Surfer",         delay: "3" },
+  { img: require("@/components/assets/figma.png"),           name: "Figma",          delay: "4" },
 ];
+/* eslint-enable @typescript-eslint/no-require-imports */
 
 export default function Tools() {
   return (
@@ -24,15 +31,20 @@ export default function Tools() {
               the <span className="accent">trade.</span>
             </h2>
           </div>
-          <p className="section-note">
-            The kit I reach for daily, swap the glyphs for real brand logos at
-            build time.
-          </p>
         </div>
         <div className="tools-grid">
           {tools.map((t) => (
             <div key={t.name} className="tool reveal" data-d={t.delay}>
-              <span className="glyph">{t.glyph}</span>
+              <div className="tool-logo-wrap">
+                <Image
+                  src={t.img}
+                  alt={t.name}
+                  fill
+                  sizes="52px"
+                  className="tool-logo-img"
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
               <span className="tname">{t.name}</span>
             </div>
           ))}

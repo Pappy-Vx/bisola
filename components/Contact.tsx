@@ -25,37 +25,31 @@ export default function Contact() {
           you&apos;re growing.
         </p>
         <a
-          href="mailto:hello@bisola.work"
+          href="mailto:bisolaaminatalli@gmail.com"
           className="mailto reveal"
           data-d="2"
         >
-          hello@bisola.work
+          bisolaaminatalli@gmail.com
         </a>
         <div className="contact-socials reveal" data-d="2">
-          <a href="#" className="btn btn-ghost">
+          <a href="https://www.linkedin.com/in/bisola-alli-a303ab1bb?utm_source=share_via&utm_content=profile&utm_medium=member_ios" className="btn btn-ghost">
             LinkedIn{" "}
             <svg className="arr" width="12" height="12" viewBox="0 0 13 13" fill="none" aria-hidden="true">
               <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="#" className="btn btn-ghost">
+          <a href="https://x.com/allibisolaamin2?s=11" className="btn btn-ghost">
             X / Twitter{" "}
             <svg className="arr" width="12" height="12" viewBox="0 0 13 13" fill="none" aria-hidden="true">
               <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="mailto:hello@bisola.work" className="btn btn-primary">
+          <a href="mailto:bisolaaminatalli@gmail.com" className="btn btn-primary">
             Email me{" "}
             <svg className="arr" width="12" height="12" viewBox="0 0 13 13" fill="none" aria-hidden="true">
               <path d="M1.5 11.5L11.5 1.5M11.5 1.5H4.5M11.5 1.5V8.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-        </div>
-        <div
-          className="placeholder-note"
-          style={{ justifyContent: "center", marginTop: "30px" }}
-        >
-          Replace email &amp; social links with real handles.
         </div>
       </div>
     </section>

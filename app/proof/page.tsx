@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import ClientEffects from "@/components/ClientEffects";
 import styles from "./page.module.css";
 
-type Cat = "seo" | "social";
+type Cat = "seo" | "social" | "copyWriting";
 
 type Item = {
   img: StaticImageData;
@@ -104,6 +104,21 @@ const ALL: Item[] = [
     label: "Social media ROI overview",
     cat: "social",
   },
+  {
+    img: require("@/components/assets/WhatsApp Image 2026-06-05 at 18.14.24.jpeg"),
+    label: "African School of Economics",
+    cat: "copyWriting",
+  },
+  {
+    img: require("@/components/assets/WhatsApp Image 2026-06-05 at 18.13.56.jpeg"),
+    label: "Press one Africa ",
+    cat: "copyWriting",
+  },
+  {
+    img: require("@/components/assets/WhatsApp Image 2026-06-05 at 18.15.17.jpeg"),
+    label: "African School of Economics 2",
+    cat: "copyWriting",
+  },
 ];
 /* eslint-enable @typescript-eslint/no-require-imports */
 
@@ -111,6 +126,7 @@ const FILTERS = [
   { key: "all" as const,    label: "All work",       count: ALL.length },
   { key: "seo" as const,    label: "SEO · Semrush",  count: ALL.filter((i) => i.cat === "seo").length },
   { key: "social" as const, label: "Social Growth",  count: ALL.filter((i) => i.cat === "social").length },
+  { key: "copyWriting" as const, label: "Copy Writing",  count: ALL.filter((i) => i.cat === "copyWriting").length },
 ];
 
 type Filter = "all" | Cat;
@@ -193,6 +209,10 @@ export default function ProofPage() {
                 <span className={`${styles.dot} ${styles.dotGreen}`} />
                 {ALL.filter((i) => i.cat === "social").length} Social Growth
               </span>
+              <span className={styles.metaPill}>
+                <span className={`${styles.dot} ${styles.dotBlue}`} />
+                {ALL.filter((i) => i.cat === "copyWriting").length} Copy Writing
+              </span>
             </div>
           </div>
         </section>
@@ -245,8 +265,8 @@ export default function ProofPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className={styles.cardLabel}>{item.label}</span>
-                    <span className={item.cat === "seo" ? styles.catSeo : styles.catSocial}>
-                      {item.cat === "seo" ? "SEO" : "Social"}
+                    <span className={item.cat === "seo" ? styles.catSeo : item.cat === "copyWriting" ? styles.catCopyWriting : styles.catSocial}>
+                      {item.cat === "seo" ? "SEO" : item.cat === "copyWriting" ? "Copy Writing" : "Social"}
                     </span>
                   </div>
                 </button>

@@ -1323,18 +1323,18 @@ section.block {
   border-color: var(--accent);
   background: var(--bg-elev2);
 }
-.tool .glyph {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: var(--accent-soft);
-  border: 1px solid var(--accent-line);
-  display: grid;
-  place-items: center;
-  color: var(--accent);
-  font-family: var(--ff-display);
-  font-weight: 800;
-  font-size: 15px;
+.tool-logo-wrap {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+}
+.tool-logo-img {
+  filter: grayscale(100%) brightness(0.55);
+  transition: filter 0.35s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+.tool:hover .tool-logo-img {
+  filter: none;
 }
 .tool .tname {
   font-family: var(--ff-body);
